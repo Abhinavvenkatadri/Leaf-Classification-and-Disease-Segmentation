@@ -24,8 +24,7 @@ A feature vector was generated from the leaf image and subjected to various mach
 
 A. Pre-processing
 
-All photos were downsized to a standard size of 1600*1200*3 before being converted from RGB to grayscale for additional thresholding. A gaussian blur with kernel size
-(55,55) was used to minimise the noise in this image. This noise-reduced image is then thresholded using Otsu's approach  to produce a binary image that separates the leaf body from the background. For more uniform masking, holes were also closed. This mask is applied to the original leaf image, as illustrated in Fig. 3(e), to ensure that the background does not influence leaf classification.
+All photos were downsized to a standard size of (1600,1200,3) before being converted from RGB to grayscale for additional thresholding. A gaussian blur with kernel size (55,55) was used to minimise the noise in this image. This noise-reduced image is then thresholded using Otsu's approach  to produce a binary image that separates the leaf body from the background. For more uniform masking, holes were also closed. This mask is applied to the original leaf image, to ensure that the background does not influence leaf classification.
 
 B. Leaf Classification
 
