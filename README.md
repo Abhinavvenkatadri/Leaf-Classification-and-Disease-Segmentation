@@ -17,10 +17,30 @@ These models are trained on several dataset combinations,
 including the merged one, and then compared using precision,
 recall, and F1-score measures.
 
-Methodology:
+## Methodology
+A feature vector was generated from the leaf image and subjected to various machine learning models to identify the type of leaf from its image. For this, the data collection comprised of Flavia, Mendeley, Diseased Mendeley, and Garden Images
 
-![App Screenshot](https://user-images.githubusercontent.com/52126773/168421012-f1ca2a53-6801-4ec4-a9c7-fcc6af2e70ee.png=150x200)
-## Screenshots
+<img src="https://user-images.githubusercontent.com/52126773/168424027-da53b0db-4454-4aad-99c6-8bd1eb065b20.png" data-canonical-src="https://user-images.githubusercontent.com/52126773/168424027-da53b0db-4454-4aad-99c6-8bd1eb065b20.png" width="200" height="400" />
+
+A.Pre-processing
+
+All photos were downsized to a standard size of 1600*1200*3 before being converted from RGB to grayscale for additional thresholding. A gaussian blur with kernel size
+(55,55) was used to minimise the noise in this image. This noise-reduced image is then thresholded using Otsu's approach  to produce a binary image that separates the leaf body from the background. For more uniform masking, holes were also closed. This mask is applied to the original leaf image, as illustrated in Fig. 3(e), to ensure that the background does not influence leaf classification.
+
+B. Leaf Classification
+
+Features extracted:
+
+![Capture](https://user-images.githubusercontent.com/52126773/168425248-8a578a85-a555-4795-9285-be862eafd9d3.PNG)
+
+Colour based Features:
+
+The extracted colour features were the mean value of the R component, the mean value of the G component, and the mean value of the B component. In addition, the standard deviation of these components, namely R, G, and B, was taken into account. 
+
+Texture based Features:
+
+The texture-based characteristics are estimated from the grayscale background-subtracted leaf acquired in the preceding phases, as shown in Fig. 3 (f). The Mahotas library [8] was used to calculate texture-based characteristics. Contrast, correlation, inverse difference moments, and entropy were chosen from among the 13 Haralick traits to be included in the set. 
+## Result
 
 ![App Screenshot](https://user-images.githubusercontent.com/52126773/168420865-725cf378-0c41-464b-8d11-82ac732dc4bc.png=100x100)
 
