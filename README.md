@@ -55,7 +55,10 @@ Different colour spaces were investigated for the disease detection part. The ma
 
 ## Results
 
-https://www.youtube.com/watch?v=BJHqc2oKOUs
+![Capture111](https://user-images.githubusercontent.com/52126773/168439015-4d9d06f9-ab55-4dbd-b5be-c9bfc9857775.PNG)
+
+
+
 
 ## Conclusion
 
