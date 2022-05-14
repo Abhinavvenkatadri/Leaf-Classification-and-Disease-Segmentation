@@ -57,9 +57,6 @@ Different colour spaces were investigated for the disease detection part. The ma
 
 ![Capture111](https://user-images.githubusercontent.com/52126773/168425804-12bb252d-61c0-4b8f-9bf9-9bf5660cb842.PNG)
 
-![App Screenshot](https://user-images.githubusercontent.com/52126773/168420865-725cf378-0c41-464b-8d11-82ac732dc4bc.png=100x100)
+## Conclusiom
 
-
-## Results
-
-Table:
+This study suggests a method for classifying leaves and finding diseased spots within them. Instead of utilising over parameterized deep learning models, the emphasis in this study is on establishing a workflow that successfully uses image processing techniques to complement machine learning models. This has the advantage of increasing approach simplicity, interpretability, and lowering the computing resource and training time burden. The obtained findings support the idea that this hybrid strategy can generate good performance in terms of various accuracy measures even when the combined dataset comprises of many classes originating from multiple datasets taken under different conditions.
