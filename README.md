@@ -19,10 +19,10 @@ recall, and F1-score measures.
 
 Methodology:
 
-![App Screenshot](https://user-images.githubusercontent.com/52126773/168421012-f1ca2a53-6801-4ec4-a9c7-fcc6af2e70ee.png)
+![App Screenshot](https://user-images.githubusercontent.com/52126773/168421012-f1ca2a53-6801-4ec4-a9c7-fcc6af2e70ee.png=150x200)
 ## Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/52126773/168420865-725cf378-0c41-464b-8d11-82ac732dc4bc.png)
+![App Screenshot](https://user-images.githubusercontent.com/52126773/168420865-725cf378-0c41-464b-8d11-82ac732dc4bc.png=100x100)
 
 
 ## Results
