@@ -22,7 +22,7 @@ A feature vector was generated from the leaf image and subjected to various mach
 
 <img src="https://user-images.githubusercontent.com/52126773/168424027-da53b0db-4454-4aad-99c6-8bd1eb065b20.png" data-canonical-src="https://user-images.githubusercontent.com/52126773/168424027-da53b0db-4454-4aad-99c6-8bd1eb065b20.png" width="200" height="400" />
 
-A.Pre-processing
+A. Pre-processing
 
 All photos were downsized to a standard size of 1600*1200*3 before being converted from RGB to grayscale for additional thresholding. A gaussian blur with kernel size
 (55,55) was used to minimise the noise in this image. This noise-reduced image is then thresholded using Otsu's approach  to produce a binary image that separates the leaf body from the background. For more uniform masking, holes were also closed. This mask is applied to the original leaf image, as illustrated in Fig. 3(e), to ensure that the background does not influence leaf classification.
@@ -39,8 +39,23 @@ The extracted colour features were the mean value of the R component, the mean v
 
 Texture based Features:
 
-The texture-based characteristics are estimated from the grayscale background-subtracted leaf acquired in the preceding phases, as shown in Fig. 3 (f). The Mahotas library [8] was used to calculate texture-based characteristics. Contrast, correlation, inverse difference moments, and entropy were chosen from among the 13 Haralick traits to be included in the set. 
+The texture-based characteristics are estimated from the grayscale background-subtracted leaf acquired in the preceding phases. The Mahotas library  was used to calculate texture-based characteristics. Contrast, correlation, inverse difference moments, and entropy were chosen from among the 13 Haralick traits to be included in the set. 
+
+Shape based Features:
+
+The following characteristics are extracted: Area, Perimeter, Physiological Length, Physiological Width, aspect ratio, rectangularity, and circularity. The shape-based feature extraction yields a total of seven features. 
+
+![App Screenshot](https://user-images.githubusercontent.com/52126773/168425434-68129ba3-be39-4512-bf70-08ed3ba97dfd.png)
+
+C. Disease Detection 
+
+Different colour spaces were investigated for the disease detection part. The masked image with the background removed was utilised to detect illness. This RGB image has been translated into the HSV and Lab colour spaces. Each component of both colour spaces was identified, yielding six distinct images. Otsu thresholding was used on these six separate components, and the output was analysed further. 
+
+![Images_Colour_Spaces](https://user-images.githubusercontent.com/52126773/168425586-e6d0276d-de54-48ef-888e-cc6d35b4b4ba.png)
+
 ## Result
+
+![Capture111](https://user-images.githubusercontent.com/52126773/168425804-12bb252d-61c0-4b8f-9bf9-9bf5660cb842.PNG)
 
 ![App Screenshot](https://user-images.githubusercontent.com/52126773/168420865-725cf378-0c41-464b-8d11-82ac732dc4bc.png=100x100)
 
