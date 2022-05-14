@@ -2,7 +2,7 @@
 # Image Processing based ML Framework for Leaf Classification and Disease Detection
 
 
-Abstract:
+## Abstract:
 Image processing techniques are employed in this
 paper to supplement machine learning models for categorizing
 leaf species and detecting unhealthy spots in them. Multiple public
@@ -51,12 +51,12 @@ C. Disease Detection
 
 Different colour spaces were investigated for the disease detection part. The masked image with the background removed was utilised to detect illness. This RGB image has been translated into the HSV and Lab colour spaces. Each component of both colour spaces was identified, yielding six distinct images. Otsu thresholding was used on these six separate components, and the output was analysed further. 
 
-![Images_Colour_Spaces](https://user-images.githubusercontent.com/52126773/168425586-e6d0276d-de54-48ef-888e-cc6d35b4b4ba.png)
+<img src="https://user-images.githubusercontent.com/52126773/168425586-e6d0276d-de54-48ef-888e-cc6d35b4b4ba.png" data-canonical-src="https://user-images.githubusercontent.com/52126773/168425586-e6d0276d-de54-48ef-888e-cc6d35b4b4ba.png" width="400" height="400" />
 
-## Result
+## Results
 
 ![Capture111](https://user-images.githubusercontent.com/52126773/168425804-12bb252d-61c0-4b8f-9bf9-9bf5660cb842.PNG)
 
-## Conclusiom
+## Conclusion
 
 This study suggests a method for classifying leaves and finding diseased spots within them. Instead of utilising over parameterized deep learning models, the emphasis in this study is on establishing a workflow that successfully uses image processing techniques to complement machine learning models. This has the advantage of increasing approach simplicity, interpretability, and lowering the computing resource and training time burden. The obtained findings support the idea that this hybrid strategy can generate good performance in terms of various accuracy measures even when the combined dataset comprises of many classes originating from multiple datasets taken under different conditions.
